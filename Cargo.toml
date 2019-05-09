@@ -2,7 +2,7 @@
 authors = ["{{authors}}"]
 edition = "2018"
 readme = "README.md"
-name = "{{project-name}}"
+name = "dsp_example"
 version = "0.1.0"
 
 [dependencies]
@@ -10,6 +10,9 @@ cortex-m = "0.5.8"
 cortex-m-rt = "0.6.5"
 cortex-m-semihosting = "0.3.2"
 panic-halt = "0.2.0"
+
+# Uncomment for the dsp example.
+cmsis-dsp-sys = {git = "https://github.com/jacobrosenthal/cmsis-dsp-sys" }
 
 # Uncomment for the panic example.
 # panic-itm = "0.4.0"
@@ -24,7 +27,7 @@ panic-halt = "0.2.0"
 
 # this lets you use `cargo fix`!
 [[bin]]
-name = "{{project-name}}"
+name = "dsp_example"
 test = false
 bench = false
 
